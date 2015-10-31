@@ -1,4 +1,4 @@
-$figure-margin: 14px;
+$post-margin: 14px;
 
 .cooked {
   box-sizing: border-box;
@@ -11,21 +11,29 @@ $figure-margin: 14px;
   box-sizing: inherit;
 }
 
-.cooked > *:first-child {
-  margin-top: $figure-margin;
-}
+//.cooked > *:first-child {
+//  margin-top: $post-margin;
+//}
 
 .cooked p {
-  padding-right: $figure-margin;
+  margin-top: 0;
 }
 
 .cooked hr {
   clear: both;
 }
 
+.cooked .clear {
+  clear: both;
+  background: #fff; // Change this to the bg color variable
+  margin: 0;
+  height: 0;
+  border: none;
+}
+
 figure {
   width: 100%;
-  margin: $figure-margin 0;
+  margin: 0 0 $post-margin 0;
 }
 
 .post-menu-area {
@@ -37,38 +45,127 @@ figure img {
   height: auto;
 }
 
-.left-half {
+// quarter
+// ==============
+
+.quarter {
+  width: calc(25% - (3/4 * #{$post-margin}));;
   float: left;
-  width: 50%;
-  padding-right: $figure-margin;
+  margin-right: $post-margin;
 }
 
-.right-half {
+.quarter.right {
   float: right;
-  width: 50%;
-  padding-right: $figure-margin;
+  margin-right: 0;
+  margin-left: $post-margin;
 }
 
-.left-third {
+.quarter.last {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.quarter.right.last {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+// third
+// ===============
+
+.third {
+  width: calc(33.3333% - (2/3 * #{$post-margin}));
   float: left;
-  width: 33.3333%;
-  padding-right: $figure-margin;
+  margin-right: $post-margin;
 }
 
-.right-third {
+.third.right {
   float: right;
-  width: 33.3333%;
-  padding-right: $figure-margin;
+  margin-right: 0;
+  margin-left: $post-margin;
 }
 
-.left-quarter {
+.third.last {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.third.right.last {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+// half
+// ==================
+
+.half {
+  width: calc(50% - (1/2 * #{$post-margin}));
   float: left;
-  width: 25%;
-  padding-right: $figure-margin;
+  margin-right: $post-margin;
 }
 
-.right-quarter {
+.half.right {
   float: right;
-  width: 25%;
-  padding-right: $figure-margin;
+  margin-right: 0;
+  margin-left: $post-margin;
+}
+
+.half.last {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.half.right.last {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+// two thirds
+// ==================
+
+.two-thirds {
+  width: calc(66.6666% - (1/3 * #{$post-margin}));
+  float: left;
+  margin-right: $post-margin;
+}
+
+.two-thirds.right {
+  float: right;
+  margin-right: 0;
+  margin-left: $post-margin;
+}
+
+.two-thirds.last {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.two-thirds.right.last {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+// three quarters
+// ==================
+
+.three-quarters {
+  width: calc(75% - (1/4 * #{$post-margin}));
+  float: left;
+  margin-right: $post-margin;
+}
+
+.three-quarters.right {
+  float: right;
+  margin-right: 0;
+  margin-left: $post-margin;
+}
+
+.three-quarters.last {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.three-quarters.right.last {
+  margin-left: 0;
+  margin-right:0;
 }
