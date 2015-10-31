@@ -1,8 +1,9 @@
 (function () {
-  Discourse.Markdown.whiteListTag('img', 'class', 'img-left');
-  Discourse.Markdown.whiteListTag('img', 'class', 'img-right');
-  Discourse.Markdown.whiteListTag('img', 'class', 'img-center');
-  Discourse.Markdown.whiteListTag('img', 'class', 'img-custom');
-  Discourse.Markdown.whiteListTag('img', 'data-max-height', /\d+\%?$/ );
-  Discourse.Markdown.whiteListTag('img', 'data-max-width', /\d+\%?$/ );
+  Discourse.Markdown.whiteListTag('figure', 'class', 'left-half');
+  Discourse.Markdown.whiteListTag('figure', 'class', 'right-half');
+  Discourse.Markdown.whiteListTag('figure', 'class', 'left-third');
+  Discourse.Markdown.whiteListTag('figure', 'class', 'right-third');
+  Discourse.Markdown.whiteListTag('figure', 'class', 'left-quarter');
+  Discourse.Markdown.whiteListTag('figure', 'class', 'right-quarter');
+  Discourse.Markdown.whiteListTag('figure', 'data-max-width', /\d+\%?$/ );
 })();

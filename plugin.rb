@@ -4,3 +4,5 @@
 # authors: scossar
 
 register_asset 'javascripts/image-tag-whitelist.js', :server_side
+register_asset 'javascripts/lib/utilities.js', :server_side
+register_asset 'stylesheets/aligned-images.scss'

@@ -1,0 +1,74 @@
+$figure-margin: 14px;
+
+.cooked {
+  box-sizing: border-box;
+  @include clearfix;
+}
+
+.cooked *,
+.cooked *:before,
+.cooked *:after {
+  box-sizing: inherit;
+}
+
+.cooked > *:first-child {
+  margin-top: $figure-margin;
+}
+
+.cooked p {
+  padding-right: $figure-margin;
+}
+
+.cooked hr {
+  clear: both;
+}
+
+figure {
+  width: 100%;
+  margin: $figure-margin 0;
+}
+
+.post-menu-area {
+  clear: both;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+}
+
+.left-half {
+  float: left;
+  width: 50%;
+  padding-right: $figure-margin;
+}
+
+.right-half {
+  float: right;
+  width: 50%;
+  padding-right: $figure-margin;
+}
+
+.left-third {
+  float: left;
+  width: 33.3333%;
+  padding-right: $figure-margin;
+}
+
+.right-third {
+  float: right;
+  width: 33.3333%;
+  padding-right: $figure-margin;
+}
+
+.left-quarter {
+  float: left;
+  width: 25%;
+  padding-right: $figure-margin;
+}
+
+.right-quarter {
+  float: right;
+  width: 25%;
+  padding-right: $figure-margin;
+}
